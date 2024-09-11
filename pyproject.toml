@@ -28,7 +28,6 @@ retry = "0.9.2"
 streamlit = "1.38.0"
 hsfs = "3.7.6"
 hopsworks = "^3.7.0"
-fiona = "^1.10.0"
 
 
 [build-system]

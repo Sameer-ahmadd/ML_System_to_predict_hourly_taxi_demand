@@ -204,13 +204,13 @@ with st.spinner(text="Generating NYC Map"):
     progress_bar.progress(4/N_STEPS)
 
 
-with st.spinner(text="Fetching batch of features used in the last run"):
+'''with st.spinner(text="Fetching batch of features used in the last run"):
     features_df = _load_batch_of_features_from_store(current_date)
     st.sidebar.write('✅ Inference features fetched from the store')
-    progress_bar.progress(5/N_STEPS)
+    progress_bar.progress(5/N_STEPS)'''
 
 
-with st.spinner(text="Plotting time-series data"):
+''' with st.spinner(text="Plotting time-series data"):
 
     predictions_df = df
 
@@ -241,4 +241,4 @@ with st.spinner(text="Plotting time-series data"):
         st.plotly_chart(fig, theme="streamlit",
                         use_container_width=True, width=1000)
 
-    progress_bar.progress(6/N_STEPS)
+    progress_bar.progress(6/N_STEPS)'''
