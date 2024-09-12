@@ -6,7 +6,7 @@
 
 ![365917218-244c75d2-dfb2-4f4f-aaa3-a50d39b35c44](https://github.com/user-attachments/assets/cb4e596e-90cd-43f9-bd3a-c0e11528f6b9)
 
-https://mlsystemtopredicthourlytaxidemand-ds986dxk6gyn6kkcukt225.streamlit.app/
+
 
 
 
@@ -61,14 +61,14 @@ https://mlsystemtopredicthourlytaxidemand-ds986dxk6gyn6kkcukt225.streamlit.app/
 - The second dashboard is the frontend monitoring one, where you can see the overall error and the error of the places with the highest demand.
 
 ## Tableros
-- [Dashboard con predicciones del modelo📈](https://bike-sharing-demand-predictor-ecobici.streamlit.app/)
+- [Dashboard with model predictions📈](https://mlsystemtopredicthourlytaxidemand-ds986dxk6gyn6kkcukt225.streamlit.app/)
 
 <p align="center">
 <img src="" width="500" align="center">
 </p>
 <br />
 
-- [Dashboard con monitorización de errores del modelo🔍](https://bike-sharing-mae-error-monitoring.streamlit.app/)
+- [Dashboard with model predictions🔍](https://bike-sharing-mae-error-monitoring.streamlit.app/)
 
 <p align="center">
 <img src="" width="500" align="center">
