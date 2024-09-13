@@ -68,7 +68,7 @@
 </p>
 <br />
 
-- [Dashboard with model predictions🔍](https://bike-sharing-mae-error-monitoring.streamlit.app/)
+- [Dashboard with model error monitoring🔍](https://mlsystemtopredicthourlytaxidemand-zpiy8hzbbsnvmwum4epkwk.streamlit.app/)
 
 <p align="center">
 <img src="" width="500" align="center">
