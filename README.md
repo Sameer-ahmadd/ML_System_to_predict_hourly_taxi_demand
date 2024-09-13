@@ -40,14 +40,14 @@
 - Eliminate the minutes and seconds and approximate them to the previous hour.
 - Add the hours in which there were no trips with the value "zero" and graph.
 - Create a function in which we obtain the indexes of the different rows and then give the most appropriate shape to the dataset so that the model learns.
-- Create the dataset that the model will use to learn. (The way we transform the dataset is that it goes from 3 columns with time, trip and station, to one column for each hour, along with the information of the station and the reference time. That is, from the original dataset we take a number of rows (previous and following hours) and perform a transposition, then - - we go down one row and repeat the process. In this case we used 672 previous hours, that is, 28 days and 36 following hours.)
+- Create the dataset that the model will use to learn. (The way we transform the dataset is that it goes from 3 columns with time, trip and station, to one column for each hour, along with the information of the station and the reference time. That is, from the original dataset we take a number of rows (previous and following hours) and perform a transposition, then - - we go down one row and repeat the process. In this case we used 672 previous hours, that is, 28 days and 1 following hour.)
 - Finally, a function was created to graph the previous and following records.
 2. In notebook 6, 7, 8, 9 and 10:
 
 - The data was split into train and test.
 - Base models were created (without applying Machine Learning) on ​​which to later compare more complex models.
 - Then it was tested with XGBoost and LightGBM, the latter giving better results.
-- The next step was to continue with LightGBM and apply feature engineering to improve the model. To do this, the following were added: the average of the last 4 weeks, latitude and longitude, time and day of the week.
+- The next step was to continue with LightGBM and apply feature engineering to improve the model. To do this, the following were added: the average of the last 4 weeks, time and day of the week.
 - Optuna was used to perform hyperparameter tuning of the model.
 3. In notebook 11, 12, 13 and 14:
 
