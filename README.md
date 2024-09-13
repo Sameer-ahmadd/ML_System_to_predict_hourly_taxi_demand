@@ -64,14 +64,14 @@
 - [Dashboard with model predictions📈](https://mlsystemtopredicthourlytaxidemand-ds986dxk6gyn6kkcukt225.streamlit.app/)
 
 <p align="center">
-<img src="" width="500" align="center">
+<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZW45ZmJ5bmluaHpocXRyZTE5N2Z6eGVtODVqMGI4ZTltaG02d3ZvZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q68omKdKYh3sQmMksP/giphy.gif" width="500" align="center">
 </p>
 <br />
 
 - [Dashboard with model error monitoring🔍](https://mlsystemtopredicthourlytaxidemand-zpiy8hzbbsnvmwum4epkwk.streamlit.app/)
 
 <p align="center">
-<img src="" width="500" align="center">
+<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHN1dXM5MDNhcjIycmtvN3FtOTk0bjdwd20zamlndjlheDh6dXJtOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kK2Y7PDjuD4bhuBoPk/giphy.gif" width="500" align="center">
 </p>
 
  <br />
