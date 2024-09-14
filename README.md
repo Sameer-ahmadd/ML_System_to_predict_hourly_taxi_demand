@@ -60,7 +60,7 @@
 - The first dashboard is the frontend dashboard which queries the feature store and loads the previous data and the corresponding predictions. In addition, a map is displayed showing the station that will have the highest demand in the next 1 hour (the description shows the expected demand and the time). Then, below, you will find the graphs showing the top places with the highest demand.
 - The second dashboard is the frontend monitoring one, where you can see the overall error and the error of the places with the highest demand.
 
-## Tableros
+## Boards
 - [Dashboard with model predictions📈](https://mlsystemtopredicthourlytaxidemand-ds986dxk6gyn6kkcukt225.streamlit.app/)
 
 <p align="center">
