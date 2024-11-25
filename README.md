@@ -61,7 +61,7 @@
 - The second dashboard is the frontend monitoring one, where you can see the overall error and the error of the places with the highest demand.
 
 ## Boards
-- [Dashboard with model predictions📈](https://mlsystemtopredicthourlytaxidemand-ds986dxk6gyn6kkcukt225.streamlit.app/)
+- [Dashboard with model predictions📈](https://mlsystemtopredicthourlytaxidemand-iprkmvcjdmlzec6hlfarhp.streamlit.app//)
 
 <p align="center">
 <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZW45ZmJ5bmluaHpocXRyZTE5N2Z6eGVtODVqMGI4ZTltaG02d3ZvZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q68omKdKYh3sQmMksP/giphy.gif" width="500" align="center">
