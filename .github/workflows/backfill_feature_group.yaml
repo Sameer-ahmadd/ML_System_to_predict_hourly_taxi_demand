@@ -1,4 +1,4 @@
-name: backfill-feature-store-pipeline
+name: backfill-feature-group
 
 on:
   schedule:
