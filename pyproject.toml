@@ -26,8 +26,8 @@ comet-ml = "3.44.4"
 fire = "0.6.0"
 retry = "0.9.2"
 streamlit = "^1.40.1"
-hopsworks = "^4.1.2"
 confluent-kafka = "^2.6.1"
+hopsworks = "4.1.0"
 
 
 [build-system]
