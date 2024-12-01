@@ -35,4 +35,4 @@ jobs:
     - name: excute python workflows from bash script
       env:
         HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
-      run: poetry run python scripts/bacfill_feature_group.py
+      run: poetry run python scripts/backfill_feature_group.py
