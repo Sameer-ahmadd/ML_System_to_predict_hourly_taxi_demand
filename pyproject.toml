@@ -29,7 +29,7 @@ dependencies = [
     "confluent-kafka (>=2.8.0,<3.0.0)",
     "hopsworks (==4.1.0)",
     "pandas (==1.5.0)",
-    "numpy (==1.24.0)",
+    "numpy (==2.2.2)",
     
     
 ]
