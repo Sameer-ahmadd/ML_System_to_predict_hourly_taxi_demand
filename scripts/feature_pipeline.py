@@ -26,9 +26,6 @@ def run(date: datetime):
     logger.info('Fetching raw data from data warehouse')
 
     # fetch raw ride events from the datawarehouse for the last 28 days
-    # we fetch the last 28 days, instead of the last hour only, to add redundancy
-    # to the feature_pipeline. This way, if the pipeline fails for some reason,
-    # we can still re-write data for that missing hour in a later run.
     rides = fetch_ride_events_from_data_warehouse(
         from_date=(date - timedelta(days=28)), to_date=date
     )
@@ -43,22 +40,32 @@ def run(date: datetime):
     ts_data['pickup_hour'] = pd.to_datetime(ts_data['pickup_hour'], utc=True)
     ts_data['pickup_ts'] = ts_data['pickup_hour'].astype(int) // 10**6
 
+    # Debugging: Print schema of ts_data
+    logger.info('Schema of ts_data:')
+    logger.info(ts_data.dtypes)
+
+    # Debugging: Convert pickup_location_id to int64 if necessary
+    ts_data['pickup_location_id'] = ts_data['pickup_location_id'].astype('int64')
+    logger.info('Schema of ts_data after conversion:')
+    logger.info(ts_data.dtypes)
+
+    # Debugging: Check for null values in pickup_location_id
+    logger.info('Null values in pickup_location_id:')
+    logger.info(ts_data['pickup_location_id'].isnull().sum())
+
     # get a pointer to the feature group we wanna write to
     logger.info('Getting pointer to the feature group we wanna save data to')
     feature_group = get_or_create_feature_group(config.FEATURE_GROUP_METADATA)
 
+    # Debugging: Test with a small subset of data
+    small_data = ts_data.head(10)
+    feature_group.insert(small_data, write_options={'wait_for_job': False})
+
     # start a job to insert the data into the feature group
-    # we wait, to make sure the job is finished before we exit the script, and
-    # the inference pipeline can start using the new data
     logger.info('Starting job to insert data into feature group...')
     feature_group.insert(ts_data, write_options={'wait_for_job': False})
-    # feature_group.insert(ts_data, write_options={"start_offline_backfill": False})
 
     logger.info('Finished job to insert data into feature group')
-
-    # logger.info('Sleeping for 5 minutes to make sure the inference pipeline has time to run')
-    # import time
-    # time.sleep(5*60)
 
 
 if __name__ == '__main__':
