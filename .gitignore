@@ -6,3 +6,5 @@ models/
 *.pkl
 .TODOS
 .env
+tests/
+
