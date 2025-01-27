@@ -1,7 +1,0 @@
-data/
-models/
-**/__pycache__
-*.parquet
-*.shp
-*.pkl
-.TODOS
